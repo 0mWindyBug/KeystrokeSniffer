@@ -1,0 +1,55 @@
+﻿  Building 'KeystrokeSniffer' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Release\KeystrokeSniffer.inf
+  Stamping [Version] section with DriverVer=02/11/2024,19.59.54.904
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\KeystrokeSniffer.inf(28-28): warning 2083: Section [standard.ntamd64] not referenced or used.
+  attach.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\attach.cpp(80,34): warning C4459: declaration of 'FilterDevice' hides global declaration
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\attach.cpp(3,16): message : see declaration of 'FilterDevice'
+  filter.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\filter.cpp(16,24): warning C4244: 'initializing': conversion from 'ULONG_PTR' to 'int', possible loss of data
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\filter.cpp(7,76): warning C4100: 'Context': unreferenced formal parameter
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\filter.cpp(7,46): warning C4100: 'DeviceObject': unreferenced formal parameter
+  kbd.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(86,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(116,67): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(122,67): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(47,14): warning C4189: 'Status': local variable is initialized but not referenced
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(51,12): warning C4189: 'LengthReturned': local variable is initialized but not referenced
+  log.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\log.cpp(77,26): warning C4996: 'ExAllocatePoolWithTag': ExAllocatePoolWithTag is deprecated, use ExAllocatePool2.
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\log.cpp(58,11): warning C4101: 'status': unreferenced local variable
+  main.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\main.cpp(8,22): warning C4100: 'DriverObject': unreferenced formal parameter
+  new.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\new.cpp(6,19): warning C4996: 'ExAllocatePoolWithTag': ExAllocatePoolWithTag is deprecated, use ExAllocatePool2.
+  objreference.cpp
+  spinlock.cpp
+  writer.cpp
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\writer.cpp(74,19): warning C4100: 'StartContext': unreferenced formal parameter
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\writer.cpp(78,11): warning C4101: 'status': unreferenced local variable
+  Generating Code...
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(127): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(129): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(133): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(139): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(142): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(147): warning C4702: unreachable code
+C:\Users\dorge\source\repos\KeystrokeSniffer\KeystrokeSniffer\kbd.cpp(151): warning C4702: unreachable code
+  KeystrokeSniffer.vcxproj -> C:\Users\dorge\source\repos\KeystrokeSniffer\x64\Release\KeystrokeSniffer.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\dorge\source\repos\KeystrokeSniffer\x64\Release\KeystrokeSniffer.sys
+  
+  .........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Users\dorge\source\repos\KeystrokeSniffer\x64\Release\KeystrokeSniffer\keystrokesniffer.cat
+  Done Adding Additional Store
+  Successfully signed: C:\Users\dorge\source\repos\KeystrokeSniffer\x64\Release\KeystrokeSniffer\keystrokesniffer.cat
+  
