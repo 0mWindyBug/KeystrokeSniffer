@@ -20,10 +20,15 @@ kbhid.sys , along with HidParse will convert those HID packets into an array of 
 
 # Keylogger design - how it works  
 we start by creating a device object and attaching it to the KeyboardClass0 device stack
+
 we set a completion routine for IRP_MJ_READ , where the scancode and flags about the event are extracted from the KEYBOARD_INPUT_DATA structures and saved into a global linked list 
+
 due to IRQL restrictions , synchronization of the list is implemented via a spin lock.
+
 a dedicated system thread is created to take care of writing recorded keystrokes back to our log file 
+
 whenever the number of keys in the list reaches a certian limit (currently set to 100) the writer thread is signaled and executes the write operation 
+
 unload trigger a write operation regardless of the number of keys in the list , so we dont "lose" recorded keys
 
 
