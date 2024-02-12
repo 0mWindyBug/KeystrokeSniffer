@@ -29,7 +29,7 @@ a dedicated system thread is created to take care of writing recorded keystrokes
 
 whenever the number of keys in the list reaches a certian limit (currently set to 100) the writer thread is signaled and executes the write operation 
 
-unload trigger a write operation regardless of the number of keys in the list , so we dont "lose" recorded keys
+unload triggers a write operation regardless of the number of keys in the list , so we dont "lose" recorded keys
 
 
 
