@@ -14,7 +14,7 @@ the service callback , which is invoked as a response to  a key press or release
 the KeyboardClass driver completion routine for IRP_MJ_READ will deliver the data (over an apc) back to the RIT which will in turn deliver it to the target user mode application 
 # Keystroke processing for HID keyboards 
 whilst the RIT - KeyboardClass processing stage remains pretty much the same , there's a noteable difference in the implementation of the initial processing of the keystroke  
-instead of delivering an interrupt whenever there's a new keyboard event to process, the operating system (specifically HID related driver) check periodcally for those events 
+instead of delivering an interrupt whenever there's a new keyboard event to process, the operating system (specifically HID related driver) checks periodcally for those events 
 the kbhid.sys driver queues read IRPs to the HidClass driver , which operates against the hardware to detect new keyboard events and transmists "HID packets" back up the device stack 
 kbhid.sys , along with HidParse will convert those HID packets into an array of KEYBOARD_INPUT_DATA structures. lastly , it will invoke the keyboard service callback
 
