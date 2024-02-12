@@ -18,7 +18,7 @@ instead of delivering an interrupt whenever there's a new keyboard event to proc
 the kbhid.sys driver queues read IRPs to the HidClass driver , which operates against the hardware to detect new keyboard events and transmists "HID packets" back up the device stack 
 kbhid.sys , along with HidParse will convert those HID packets into an array of KEYBOARD_INPUT_DATA structures. lastly , it will invoke the keyboard service callback
 
-# How it works 
+# Keylogger design - how it works  
 we start by creating a device object and attaching it to the KeyboardClass0 device stack
 we set a completion routine for IRP_MJ_READ , where the scancode and flags about the event are extracted from the KEYBOARD_INPUT_DATA structures and saved into a global linked list 
 due to IRQL restrictions , synchronization of the list is implemented via a spin lock.
