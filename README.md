@@ -7,7 +7,7 @@ Tested on Windows 10 21H2 and 22H2
 under 'log.h' you can configure the path to the log file where KeystrokeSniffer will write recorded keystrokes 
 
 # Keystroke processing for PS/2 keyboards 
-whenever a key is pressed or released , an interrupt (IRQ1) is generated and handled by an ISR implemented by the i8042prt.sys driver.
+whenever a key is pressed or released , an interrupt (IRQ1) is generated and handled by an ISR implemented in the i8042prt.sys driver.
 the ISR is responsible to read the scancode and queue a DPC which in turn will invoke the KeyboardClassServiceCallback, implemented by the KeyboardClass driver. 
 simultaneously , the raw input thread (hosted by csrss.exe and implemented as part of win32k.sys) routinely sends read IRPs to the KeyboardClass driver , those IRPs are pended .
 the service callback , which is invoked as a response to  a key press or release , is responsible to trigger the completion processing of the pending IRP. 
